@@ -36,4 +36,16 @@ public class Cat {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public void crearGato (Cat cat,String name, int age, String color ) {
+        cat.setName(name);
+        cat.setAge( age );
+        cat.setColor(color);
+    }
+
+    public void showInfoCat ( Cat cat) {
+        System.out.println("name: " + cat.getName());
+        System.out.println("age: " + cat.getAge());
+        System.out.println("color: " + cat.getColor());
+    }
 }
